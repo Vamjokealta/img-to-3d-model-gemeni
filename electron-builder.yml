@@ -1,0 +1,34 @@
+appId: com.imageto3d.studio
+productName: ImageTo3D
+copyright: Copyright © 2026
+
+directories:
+  output: dist-electron
+  buildResources: build
+
+files:
+  - dist/**/*
+  - electron/**/*
+  - models/**/*
+  - package.json
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  executableName: ImageTo3D
+  artifactName: ${productName}-${version}-${os}-${arch}.${ext}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: ImageTo3D Studio
+
+portable:
+  artifactName: ImageTo3D-Portable.exe

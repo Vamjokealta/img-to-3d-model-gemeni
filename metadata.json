@@ -1,0 +1,6 @@
+{
+  "name": "ImageTo3D Studio",
+  "description": "Offline AI image to 3D mesh generator with depth estimation, mesh sculpting, cleanup tools, and multi-format 3D export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
